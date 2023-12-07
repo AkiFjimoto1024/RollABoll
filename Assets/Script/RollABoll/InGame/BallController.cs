@@ -25,8 +25,10 @@ public class BallController : MonoBehaviour
     }
     public void BallMove(Vector3 direction)
     {
-        ballRigidBody.AddForce(direction);
+        Debug.Log(direction *10);
+        ballRigidBody.AddForce(direction*10);
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name == "Cube")

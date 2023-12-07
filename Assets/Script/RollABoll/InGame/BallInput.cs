@@ -18,6 +18,7 @@ public class BallInput : MonoBehaviour
         }
         if (Keyboard.current.sKey.isPressed)
         {
+            Debug.Log(ballController);
             ballController.BallMove(Vector3.back);
         }
         if (Keyboard.current.dKey.isPressed)
